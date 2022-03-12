@@ -81,6 +81,11 @@ header label{
         opacity: .4;
     } 
 }
+@media(max-width:540px){
+    .footer ul{
+        font-size: 10px;
+    }
+}
 .footer{
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
