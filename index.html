@@ -5,52 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample-Website</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        .active{
+            font-size: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border-left-color: transparent;
+            animation: rotate 1.4s ease 3.5s infinite;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(360deg);
+                /* transform: scale(1.5); */
+            }
+            100%{
+                /* transform: rotate(360deg); */
+                /* transform: scale(5.5); */
+            }
+
+        }
+        .btnwrapper{   
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            top: 50%;
+            position: absolute;
+            left: 50%;
+            padding: 7%;
+            transform: translateX(-50%);
+        }
+        .button{
+            text-transform: uppercase;
+        }
+        .bg-img{
+            /* position: absolute; */
+            z-index: -1;
+            height: 100vh;
+            width: 100%;
+        }
+        .info{
+            position: relative;
+            color: tomato;
+        }
+        .text{
+            position: absolute;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding: 15%;
+            /* margin-top: 5% !important; */
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <a href="#" class="logo">BRAND LOGO</a>
-        <input type="checkbox" id="menu-bar">
-        <!-- <label for="menu-bar">Menu</label> -->
-        <label for="menu-bar"><i class="fa fa-bars" aria-hidden="true"></i></label>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">contact us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-    <div style="">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam quia laudantium ratione voluptates nesciunt voluptas odit, inventore sequi vitae explicabo debitis tempore ullam sapiente eos officia qui, quos doloremque.</p>
-        
-        MAYUR
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam quia laudantium ratione voluptates nesciunt voluptas odit, inventore sequi vitae explicabo debitis tempore ullam sapiente eos officia qui, quos doloremque.</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veniam voluptatem fuga aliquam quis ea perferendis, neque, beatae sequi impedit error facere sit? Blanditiis, incidunt! Laboriosam unde ratione laborum, nesciunt dolorem labore ut tenetur et, excepturi doloribus quisquam nobis molestiae similique alias itaque earum. Labore voluptas eligendi tempore! Optio adipisci eius, vel ipsum voluptates dolorem ducimus molestiae officia magni reiciendis aperiam, eaque ut. Sint quidem, temporibus sunt est, doloribus tempora, placeat rerum ab cumque odit laboriosam. Eos neque quos ullam, iste enim natus ducimus nemo ipsa eligendi quod debitis doloribus error! Tempora aut ex fugiat minima, maiores quae, iste ad nisi at unde voluptas laborum eius natus nihil officia recusandae quos quam? Eligendi, magnam esse explicabo necessitatibus totam recusandae molestiae possimus ducimus laboriosam repellendus libero officiis sequi numquam rerum veniam exercitationem mollitia sed asperiores. Quis, officia maiores nihil sit quo nemo exercitationem sint voluptas repellat suscipit? Doloremque debitis voluptatum amet ad animi? Accusamus quo necessitatibus officia, consequatur deleniti nostrum maiores magni dolorum! Optio dignissimos at aliquid placeat? Dignissimos est vero dolor eligendi incidunt repudiandae voluptas consequuntur facere non eos molestiae aliquam placeat assumenda officia obcaecati, dolore molestias eveniet delectus, ad doloribus ex, ipsam quibusdam nulla! Libero aperiam sint dolore molestiae quo, magni aspernatur laboriosam hic nam debitis eaque inventore recusandae saepe nesciunt veniam eveniet id iste, corporis ab quaerat doloremque? Aspernatur voluptatum dolor, exercitationem obcaecati dolorum doloremque quod nesciunt nostrum voluptas aut modi eos fugit eum ducimus, ex sequi sapiente odio harum soluta, libero esse cumque! Cum excepturi consequatur accusamus voluptatibus error voluptas quisquam magnam possimus ratione nemo distinctio atque nesciunt quibusdam, amet eius in libero ipsum dolore pariatur nobis esse id. Odit quae voluptatem officia, nesciunt, fuga eligendi labore a quia vel, dolorum cum corporis. Quos praesentium esse earum iusto ab mollitia quod nobis rem vero aliquam. Necessitatibus illo tempore quasi reiciendis eos, ea cum doloremque id deserunt! Delectus aspernatur, dolores quisquam ab rem nemo mollitia saepe quia nobis, ex quibusdam. Reprehenderit labore doloribus dignissimos excepturi suscipit odio veritatis alias dolor veniam incidunt? Reiciendis mollitia reprehenderit sed tenetur modi deserunt, cupiditate saepe nemo maxime accusantium ex nulla quia! Amet ea quidem reiciendis ipsum minima perspiciatis soluta optio in iste enim pariatur saepe ipsa eligendi atque odit, cupiditate, dolores maiores! Necessitatibus sit eligendi ad. Optio, cumque consectetur repellat sunt autem eaque a sit alias laudantium, amet aspernatur distinctio, harum eligendi iure eius reprehenderit inventore provident at. Amet, minima impedit, magnam quae quidem placeat blanditiis doloremque hic corrupti nihil expedita voluptate eos dolores! Odit nulla omnis nihil ullam! Corporis architecto sapiente veniam vitae distinctio sint tenetur totam itaque harum dicta a quam earum, nisi hic dolor repudiandae quod delectus ipsam magni dignissimos numquam! Voluptatem in beatae expedita nulla maiores aut fuga modi eum iure reiciendis deleniti, eaque officia fugiat suscipit ut perspiciatis reprehenderit consequuntur itaque. Tenetur velit facere, odio cumque explicabo eius minus eos officiis asperiores ad consequatur magnam qui? Error consequuntur nam commodi. At sint quidem quia accusantium sunt autem veniam eaque, debitis praesentium corrupti maiores error in animi hic!</p>
+<body style="background-color: #000;">
+    <div class="info">
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut excepturi unde fuga in libero dignissimos rerum eveniet quod at, consequuntur facere cupiditate quam accusamus inventore quasi impedit eligendi, reprehenderit explicabo quaerat a mollitia architecto, earum obcaecati. Tempora architecto eum aperiam, aspernatur dolorem vero consectetur. Eum est nobis assumenda consectetur eos!</p>
+        <img src="./assets/images/bg-img2.jpg" class="img-fluid bg-img" alt="Responsive image">
     </div>
-    </main>
-    <footer class="footer">
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
+    <!-- onclick=window.location.href="tab1.html"; -->
+        <!-- <button class="button" >
+        <a href="tab1.html">Click to Explore</a>
+            <span class="icon">Open</span>
+        </button> -->
+    <div class="btnwrapper">
+        <!-- <button type="button" class="btn btn-primary button" onclick=window.location.href="tab1.html";>Primary</button> -->
+        <button class=".btn btn-light btn-lg btn-outline-info button" onclick=window.location.href="tab1.html";>Submit</button>
+    </div>
 
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">contact us</a></li>
-        </ul>
-
-        <p class="copyright">
-            Copyright of Developement @2022 
-        </p>
-    </footer>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".button").click(function(){
+                $(this).addClass("active");
+                // console.log('active added');
+            });
+        });
+    </script>
 </body>
 </html>
