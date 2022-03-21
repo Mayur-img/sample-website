@@ -5,6 +5,9 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 main{
     /* position: relative; */
     min-height: 100vh;
@@ -23,7 +26,8 @@ header{
     right: 0%;
     top: 0%;
     /* bottom: 0%; */
-    background-color: #816a6a;
+    /* background-color: #816a6a; */
+    background-color: rgb(0, 204, 0);
     /* background: #ffffff; */
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
     display: flex;
