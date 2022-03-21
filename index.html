@@ -76,6 +76,7 @@
             /* margin-top: 5% !important; */
             animation-name: textanimate;
             animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
         @media (min-width: 320px) and (max-width: 539px){
             .text{
@@ -109,9 +110,40 @@
                 color: turquoise;
             }
         }
+        .top-heading{
+                position: absolute;
+                z-index: 1;
+                color: #ffffff;
+                /* display: flex; */
+                /* text-align: center; */
+                /* justify-content: center; */
+                /* align-items: center; */
+                left: 50%;
+                transform: translate(-50%);
+                top: 5%;
+                margin: 0 auto;
+        }
+        .top-heading span{
+            text-transform: uppercase;
+            animation: heading 3s 1;
+        }
+        @keyframes heading{
+            0%{
+                /* margin-bottom: -40px; */
+            }
+            30%{
+                letter-spacing: 25px;
+            }
+            85%{
+                /* letter-spacing: 0.8px; */
+            }
+        }
     </style>
 </head>
 <body style="background-color: #000;">
+    <div class="top-heading">
+        <span>Adventure's nature</span>
+    </div>
     <div class="info">
         <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut excepturi unde fuga in libero dignissimos rerum eveniet quod at, consequuntur facere cupiditate quam accusamus inventore quasi impedit eligendi, reprehenderit explicabo quaerat a mollitia architecto, earum obcaecati. Tempora architecto eum aperiam, aspernatur dolorem vero consectetur. Eum est nobis assumenda consectetur eos!</p>
         <img src="./assets/images/bg-nature.jpg" class="img-fluid bg-img" alt="Responsive image">
