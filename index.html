@@ -74,6 +74,8 @@
             /* padding: 15%; */
             top: 40%;
             /* margin-top: 5% !important; */
+            animation-name: textanimate;
+            animation-duration: 4s;
         }
         @media (min-width: 320px) and (max-width: 539px){
             .text{
@@ -91,6 +93,20 @@
                 font-family: emoji;
                 font-weight: 600;
                 padding: 4%;
+            }
+        }
+        @keyframes textanimate{
+            0% {
+                color: red;
+            }
+            25%{
+                color: yellow;
+            }
+            50%{
+                color: violet;
+            }
+            100%{
+                color: turquoise;
             }
         }
     </style>
