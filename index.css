@@ -181,3 +181,35 @@ header label{
         margin-top: 10%;
     }
 }
+.box img{
+        /* position: absolute; */
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        max-height: inherit;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 80px;
+        height: 70px;
+        padding: 8px;
+        border-radius: 20%;
+}
+.box .btn{
+padding: 6px;
+margin-top: 15px;
+background-color: greenyellow;
+padding-left: 25px;
+padding-right: 25px;
+width: 100px;
+height: 38px;
+border: 2px solid red;
+border-radius: 7px;
+cursor: pointer;
+}
+.btn:hover{
+    background-color: green;
+    color: #fff;
+    border: 2px solid greenyellow;   
+}
