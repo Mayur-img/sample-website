@@ -4,16 +4,17 @@
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
 }
 main{
-    /* position: relative; */
+    position: relative;
     min-height: 100vh;
-    background-image: url(./assets/images/nature-3150822.jpg);
+    /* background-image: url(./assets/images/nature-3150822.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     display: flex;
     align-items: center;
     text-align: center;
@@ -144,4 +145,38 @@ header label{
     text-align: center;
     font-size: 15px;
     color: #aaa;
+}
+.container{
+    width: 90%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap; */
+    margin: 50px auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.box{
+    width: 20%;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+@media screen and (max-width:1000px){
+    .box{
+        width: 40%;
+    }
+}
+@media screen and (max-width:620px){
+    .container{
+        width: 100%;
+    }
+    .box{
+        width: 80%;
+    }
 }
