@@ -10,8 +10,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script>
 $(document).ready(function(){
+    // $(".cross-bar").hide();
     $(".menu-bar").click(function(){
+        // $(".menu-bar").hide();
+        // $(".cross-bar").show();
         $(".navbar").slideToggle(1000);
+        // $(".cross-bar").slideToggle(1000);
     });
 });
 </script>
@@ -22,6 +26,10 @@ $(document).ready(function(){
         <input type="checkbox" id="menu-bar">
         <!-- <label for="menu-bar">Menu</label> -->
         <label for="menu-bar"><i class="fa fa-bars menu-bar" aria-hidden="true"></i></label>
+        
+        <!-- <input type="checkbox" id="cross-bar">
+        <label for="cross-bar"><i class="fa-solid fa-xmark cross-bar" aria-hidden="true"></i></label> -->
+        <!-- <i class="fa-solid fa-xmark"></i> -->
         <nav class="navbar">
             <ul>
                 <li><a href="#">home</a></li>
