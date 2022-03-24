@@ -11,15 +11,8 @@ html{
 }
 main{
     position: relative;
-    min-height: 100vh;
-    /* background-image: url(./assets/images/nature-3150822.jpg);
-    background-size: cover;
-    background-position: center; */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
+    margin-top: 68px;
+   
 }
 header{
     position: fixed;
@@ -35,7 +28,9 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    padding: 0px 7%;   
+    height: 68px;
+    padding: 0 3%;
+
 }
 header .logo{
     font-weight: bolder;
@@ -70,7 +65,7 @@ header label{
 }
 @media(max-width:991px){
     header{
-        padding: 20px;
+        /* padding: 20px; */
     }
     header label{
         display: initial;
@@ -169,6 +164,13 @@ header label{
     border-radius: 5%;
     background-color: #ECECD9;
     box-shadow: 5px 5px 5px 5px #888887;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box p{
+    text-align: center;
 }
 @media screen and (max-width:1000px){
     .box{
@@ -218,8 +220,8 @@ margin-bottom: 4%;
     border: 2px solid greenyellow;   
 }
 .top-contents{
-    width: 90%;
-    margin: 4% auto;
+    width: 100%;
+    /* margin: 4% auto; */
     background-color: #ccc;
     height: 99vh;
     position: relative;
@@ -229,21 +231,24 @@ margin-bottom: 4%;
     justify-content: space-around;
     flex-flow: wrap; */
 }
-.left-side{
+.top-left-row
+{
     float: left;
     background-image: url(./assets/images/wild-life.jpg);
-    height: 90vh;
-    width: 45%;
+    height: 99vh;
+    width: 50%;
     background-position: center center;
     background-size: cover;
 }
 .top-right-row{
-    padding: 3%;
+    /* padding: 3%; */
+    text-align: center;
+    padding-top: 5%;
 }
-.top-right-row .right-side p{
-    display: flex;
-    text-align: left;
-    padding: 3%;
+ .top-right-row p{
+    /* display: flex; */
+    /* text-align: left;
+    padding: 3%; */
     font-size: 25px;
 }
 .cnt-btn{
@@ -258,4 +263,17 @@ border: 2px solid red;
 border-radius: 7px;
 cursor: pointer;
 margin-bottom: 4%;
+}
+@media screen  and (max-width:768px){
+    .top-contents{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    }
+    .top-left-row{
+        width: 100%;
+        /* height: ; */
+    }
+    
 }
