@@ -205,7 +205,7 @@ margin-top: 15px;
 background-color: greenyellow;
 padding-left: 25px;
 padding-right: 25px;
-width: 100px;
+/* width: 100px; */
 height: 38px;
 border: 2px solid red;
 border-radius: 7px;
@@ -216,4 +216,46 @@ margin-bottom: 4%;
     background-color: green;
     color: #fff;
     border: 2px solid greenyellow;   
+}
+.top-contents{
+    width: 90%;
+    margin: 4% auto;
+    background-color: #ccc;
+    height: 99vh;
+    position: relative;
+}
+.top-row{
+    /* display: flex;
+    justify-content: space-around;
+    flex-flow: wrap; */
+}
+.left-side{
+    float: left;
+    background-image: url(./assets/images/wild-life.jpg);
+    height: 90vh;
+    width: 45%;
+    background-position: center center;
+    background-size: cover;
+}
+.top-right-row{
+    padding: 3%;
+}
+.top-right-row .right-side p{
+    display: flex;
+    text-align: left;
+    padding: 3%;
+    font-size: 25px;
+}
+.cnt-btn{
+padding: 6px;
+margin-top: 15px;
+background-color: greenyellow;
+padding-left: 25px;
+padding-right: 25px;
+/* width: 100px; */
+height: 38px;
+border: 2px solid red;
+border-radius: 7px;
+cursor: pointer;
+margin-bottom: 4%;
 }
